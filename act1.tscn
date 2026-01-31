@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://dv3wbe1hyrykd"]
+
+[ext_resource type="Script" uid="uid://ct3370r55isra" path="res://character_body_2d.gd" id="1_v376o"]
+[ext_resource type="Texture2D" uid="uid://cape72eiugwye" path="res://assets/images/BG3.png" id="2_s3kis"]
+
+[sub_resource type="Animation" id="Animation_uby62"]
+resource_name = "move"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a80qf"]
+_data = {
+&"move": SubResource("Animation_uby62")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_netr7"]
+size = Vector2(107, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q5nn"]
+size = Vector2(641, 29.5)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(132, 280)
+script = ExtResource("1_v376o")
+
+[node name="Label" type="Label" parent="CharacterBody2D"]
+offset_right = 107.0
+offset_bottom = 49.0
+text = "hello world
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D/Label"]
+libraries = {
+&"": SubResource("AnimationLibrary_a80qf")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(43.5, 9)
+shape = SubResource("RectangleShape2D_netr7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(418.5, 411.75)
+shape = SubResource("RectangleShape2D_2q5nn")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(418.5, 393.5)
+scale = Vector2(2.003125, 0.34895834)
+texture = ExtResource("2_s3kis")
