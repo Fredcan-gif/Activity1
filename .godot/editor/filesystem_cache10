@@ -1,0 +1,57 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1771588852
+act1.tscn::PackedScene::8692368154835555743::1771588675::0::1::::<><><>0<>0<><>::uid://buhhshmjpcotd::::res://act_1.gd<>uid://bh2wqugalqi2t::::res://assets/Environment/FREE/5. Industrial Tileset - Starter Pack 32p/3_Far_Background_Tile.png<>uid://d14lpmguj65r2::::res://player.tscn<>uid://d0ocmeusb7m2n::::res://assets/Environment/FREE/5. Industrial Tileset - Starter Pack 32p/1_Industrial_Tileset_1.png<>uid://c23uh37gkahs4::::res://assets/Environment/FREE/5. Industrial Tileset - Starter Pack 32p/2_Industrial_Tileset_1_Background.png<>uid://jh5ihv4mlgnp::::res://assets/Environment/FREE/5. Industrial Tileset - Starter Pack 32p/1_Industrial_Tileset_1B.png
+act_1.gd::GDScript::3805105750601983841::1771581204::0::1::::<>Node2D<><>0<>0<><>::
+BG1.png::CompressedTexture2D::6338380613079167186::1771581204::1771581296::1::::<><><>0<>0<>cf033f766442a73d507a3644a8e9cbd9<>res://.godot/imported/BG1.png-9b2c7922fa5f406c485c7747eded35af.ctex::
+character_body_2d.gd::GDScript::2742429459924324470::1771588164::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Documentation1.png::CompressedTexture2D::3154421685308547546::1771581204::1771581297::1::::<><><>0<>0<>146dc926a6edef19f113385545280c31<>res://.godot/imported/Documentation1.png-6d306837eef0dcb571e156925c1af1ec.ctex::
+Documentation2.png::CompressedTexture2D::6117946213602756383::1771581204::1771581296::1::::<><><>0<>0<>c904f80d362c4d29f54e5de894cc3314<>res://.godot/imported/Documentation2.png-925760ff108210f87f8e264a0885b656.ctex::
+Documentation3.png::CompressedTexture2D::4371096510152282856::1771581204::1771581296::1::::<><><>0<>0<>83470b204c90fb2b2a8e0937334c3a73<>res://.godot/imported/Documentation3.png-ccba262741296c2ea09a42b5df19bde6.ctex::
+Documentation4.png::CompressedTexture2D::1371227713539776794::1771581204::1771581296::1::::<><><>0<>0<>b4c1ed7269ef571c9461028f4b3b4193<>res://.godot/imported/Documentation4.png-b36e5aea2e03ab5f6728c9c0436909c7.ctex::
+Documentation5.png::CompressedTexture2D::3443218282078196089::1771581204::1771581296::1::::<><><>0<>0<>e456d1feeab9a85583605daf95a57fc6<>res://.godot/imported/Documentation5.png-274fd2e842f392aed24903bdc71ad366.ctex::
+Documentation6.png::CompressedTexture2D::4062566530496353803::1771581204::1771581296::1::::<><><>0<>0<>f91ea91d052db16eab490931647c7b60<>res://.godot/imported/Documentation6.png-062e25d0267036f8dea9d4d8d593be1d.ctex::
+icon.svg::CompressedTexture2D::5010747187588287249::1771581204::1771581296::1::::<><><>0<>0<>631193a8795ed2b164badcbb2570902b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.tscn::PackedScene::9044734254835900637::1771588164::0::1::::<><><>0<>0<><>::uid://bfcpoa5eaw7re::::res://character_body_2d.gd<>uid://tyw2hnn2byey::::res://assets/Player/character_spritesheet.png
+player_node.tscn::PackedScene::1423544793247303193::1771582411::0::1::::<><><>0<>0<><>::uid://d14lpmguj65r2::::res://player.tscn
+README.md::TextFile::-1::1771581204::0::1::::<><><>0<>0<><>::
+::res://assets/::1771588795
+::res://assets/Environment/::1771588795
+BG1.png::CompressedTexture2D::7187697508154913665::1771581204::1771581297::1::::<><><>0<>0<>d7e6a9a6cc93e5616146693e45bbd1e1<>res://.godot/imported/BG1.png-8238bcc61755b9d88ffb53c0617b14af.ctex::
+BG2.png::CompressedTexture2D::8435017153786482266::1771581204::1771581297::1::::<><><>0<>0<>babffbd116049a46a5c7cda0fc0cbdf1<>res://.godot/imported/BG2.png-8cd0f28904bfd4b837cbe8458fca0c33.ctex::
+BG3.png::CompressedTexture2D::6274310174187758292::1771581204::1771581297::1::::<><><>0<>0<>2a29809cf871174097dc939d7ee42212<>res://.godot/imported/BG3.png-8db797b9df4233a766021992cc8a227a.ctex::
+Decors.png::CompressedTexture2D::3811345701887791791::1771581204::1771581296::1::::<><><>0<>0<>cb1149d77b0b58b28e510db44d055eaf<>res://.godot/imported/Decors.png-e518fede6bc8fb0ff0aa3472b9462e5d.ctex::
+ExampleTiles.png::CompressedTexture2D::7927958261897744206::1771581204::1771581296::1::::<><><>0<>0<>d8fbada2fc7f6090701962364d2a572f<>res://.godot/imported/ExampleTiles.png-1bf62b9fd7010624319126cccddcb126.ctex::
+Mockup2x.png::CompressedTexture2D::192335883649522048::1771581204::1771581296::1::::<><><>0<>0<>ebeedca972a1d6794c82e6ca1e849278<>res://.godot/imported/Mockup2x.png-12d6d5663ee621614edcc0ff6c7ff05c.ctex::
+Tileset.png::CompressedTexture2D::1641990313509324341::1771581204::1771581296::1::::<><><>0<>0<>9a35aa17c96e015bbbc916b01ae96941<>res://.godot/imported/Tileset.png-a5b54c93f64d4fe349f3164188f1b4a4.ctex::
+::res://assets/Environment/FREE/::1771588795
+::res://assets/Environment/FREE/5. Industrial Tileset - Starter Pack 32p/::1771588795
+0_Template_Tileset.png::CompressedTexture2D::7045334754251802038::1745988882::1771581476::1::::<><><>0<>0<>9581e94ff9f8da23d5e6f4bf7c2f095c<>res://.godot/imported/0_Template_Tileset.png-ccce0053eb0fec8892fe6d479ed70d6b.ctex::
+1_Industrial_Tileset_1.png::CompressedTexture2D::8943027535909276707::1745988882::1771581476::1::::<><><>0<>0<>96fb4cd9eb1e7ab6f9c052c5ea30404a<>res://.godot/imported/1_Industrial_Tileset_1.png-dc8f33810a16344f39ed32186acaa46e.ctex::
+1_Industrial_Tileset_1B.png::CompressedTexture2D::647986434593389785::1745988882::1771581476::1::::<><><>0<>0<>ff3352c078c64e578a4f9e5e3ec2a46f<>res://.godot/imported/1_Industrial_Tileset_1B.png-de818ea3670796044ce50ae5b986f3ed.ctex::
+1_Industrial_Tileset_1C.png::CompressedTexture2D::7185794452106692925::1745988882::1771581476::1::::<><><>0<>0<>0fb0333f47a718c3e6ef486a4ff92fcb<>res://.godot/imported/1_Industrial_Tileset_1C.png-e7f5257a8b66d7b21b3584ff19021af3.ctex::
+2_Industrial_Tileset_1B_Background.png::CompressedTexture2D::1848758081131994772::1745988882::1771581475::1::::<><><>0<>0<>89a5145934777df0710baab00fedd4ab<>res://.godot/imported/2_Industrial_Tileset_1B_Background.png-0c06e2bd1352431c7e1df9a875f88703.ctex::
+2_Industrial_Tileset_1C_Background_Violet.png::CompressedTexture2D::7757546774341264781::1745988882::1771581475::1::::<><><>0<>0<>6b18a9abf2fab5fa261c42b783fef2d6<>res://.godot/imported/2_Industrial_Tileset_1C_Background_Violet.png-df471cbd30c34704ae520e2dc8aa72f2.ctex::
+2_Industrial_Tileset_1_Background.png::CompressedTexture2D::6726971083512943741::1745988882::1771581475::1::::<><><>0<>0<>df1f33578b6aadfacf82222b91f146c8<>res://.godot/imported/2_Industrial_Tileset_1_Background.png-bdfd6f813c00cc3460f6bfb84377282d.ctex::
+3_Far_Background_Tile.png::CompressedTexture2D::2934846194813450361::1745988882::1771581475::1::::<><><>0<>0<>4c424d08bdc3518f68f7667b29cd9f33<>res://.godot/imported/3_Far_Background_Tile.png-b265a495d8991352fdc07fd929c18c7a.ctex::
+::res://assets/Environment/FREE/6. Character Animations 32p/::1771588795
+Anim_Robot_Jump1_v1.1_spritesheet.png::CompressedTexture2D::8768175781491412371::1745988880::1771581475::1::::<><><>0<>0<>ef115c5ca6b04bdef7c3df9824c1e8e7<>res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-84f468b7628c860a1f2a4416cd2ce213.ctex::
+Anim_Robot_Walk1_v1.1_spritesheet.png::CompressedTexture2D::1265438250310079251::1745988880::1771581475::1::::<><><>0<>0<>9f1f1e68fe772aecd5445f4b28103161<>res://.godot/imported/Anim_Robot_Walk1_v1.1_spritesheet.png-5f901595677cd4308fa97fa66940a58d.ctex::
+::res://assets/Environment/FREE/6. Character Animations 32p/Anim_Robot_Jump1_v1.1_frames/::1771588795
+1.png::CompressedTexture2D::1486411077970915639::1745988882::1771581475::1::::<><><>0<>0<>4a69d19b470c0cb858cee9d8d5e07308<>res://.godot/imported/1.png-004706495cb444ebff3214b91de36407.ctex::
+2.png::CompressedTexture2D::6219960974112763673::1745988882::1771581475::1::::<><><>0<>0<>ba3f81ce731e99739beb71199435bac6<>res://.godot/imported/2.png-68c9ad321d85a4db97e270460f59a79b.ctex::
+3.png::CompressedTexture2D::7406245945249418470::1745988882::1771581475::1::::<><><>0<>0<>49a3bae7de08d46eb83c4e5abcbc285a<>res://.godot/imported/3.png-4e53fcaa778604b61ffbd641f8282a05.ctex::
+4.png::CompressedTexture2D::3426364281205658349::1745988882::1771581475::1::::<><><>0<>0<>40907fca93084b21456d3ea3d82b5fca<>res://.godot/imported/4.png-697bc3991d9d89606b7043d710d7e61f.ctex::
+5.png::CompressedTexture2D::6514521289335995315::1745988882::1771581475::1::::<><><>0<>0<>28c8e5871a5ae8072bd9800b40bf4db8<>res://.godot/imported/5.png-7a4c39db094836d536173b07903cb49d.ctex::
+6.png::CompressedTexture2D::3981605012152772009::1745988882::1771581475::1::::<><><>0<>0<>3a3f958d32475afb4675b9a919e5984e<>res://.godot/imported/6.png-0a49658e6c78c011fb90fe9947be99d8.ctex::
+7.png::CompressedTexture2D::2111087579524400437::1745988882::1771581475::1::::<><><>0<>0<>bf064fd4c87d7acfdf74ab23894a1a2b<>res://.godot/imported/7.png-6bbe7f6a079b89cd7dfc65597a16c2bc.ctex::
+8.png::CompressedTexture2D::8470636608805277127::1745988882::1771581475::1::::<><><>0<>0<>774e7e83a4063ef998a4d33b2c45c1c7<>res://.godot/imported/8.png-cc128671a8ecde66f8df144a541afe1b.ctex::
+::res://assets/Environment/FREE/6. Character Animations 32p/Anim_Robot_Walk1_v1.1_frames/::1771588795
+1.png::CompressedTexture2D::7296661332754478986::1745988880::1771581475::1::::<><><>0<>0<>8f3b43ea506b640e35ee58dfc0af1f45<>res://.godot/imported/1.png-758de8dd746c0bcfade8ccd415f8b911.ctex::
+2.png::CompressedTexture2D::8996741406842938056::1745988880::1771581475::1::::<><><>0<>0<>09ed7fd3b94d04456faf687a93a3df84<>res://.godot/imported/2.png-36ca00c5808828f7c5c6c9a2c0e01439.ctex::
+3.png::CompressedTexture2D::5754769225464919010::1745988882::1771581475::1::::<><><>0<>0<>2ef4e1d0680d9f91943cf99f1c8df93b<>res://.godot/imported/3.png-81773d7cb91625062eb58187e907e41f.ctex::
+4.png::CompressedTexture2D::2624225286943540663::1745988880::1771581475::1::::<><><>0<>0<>9cdffecaf926e61a54b4bbf4b646582e<>res://.godot/imported/4.png-554b28683d9e5f091675da7c234042a5.ctex::
+5.png::CompressedTexture2D::5527851841816885381::1745988880::1771581475::1::::<><><>0<>0<>fee01692c39e0ce207ffbc8717553402<>res://.godot/imported/5.png-a02a45b78f31acd8320dad86b57a9b4f.ctex::
+6.png::CompressedTexture2D::7513042874566194566::1745988880::1771581475::1::::<><><>0<>0<>f0c85c54115ae7c8ac28c9a39ee81170<>res://.godot/imported/6.png-3deb396c131a4964127a0563bd196c03.ctex::
+::res://assets/Player/::1771588795
+character_spritesheet.png::CompressedTexture2D::1384517473869061528::1771581204::1771581296::1::::<><><>0<>0<>ae0192e911f4c9597cc2df578cbbd4ff<>res://.godot/imported/character_spritesheet.png-794f9e0acc674333844ebfc09f48bdf3.ctex::
+demochar_portrait_spritesheet.png::CompressedTexture2D::1259278177095628810::1771581204::1771581296::1::::<><><>0<>0<>ca9a74454dca03357d706fc1f2adf573<>res://.godot/imported/demochar_portrait_spritesheet.png-799cf0bfbc34eb87082ef4facdd83731.ctex::
