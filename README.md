@@ -1,3 +1,7 @@
-# Activity1
+# Activity 2
 
-This project features a simple player controlled text "hello world" ontop of a collidable grass platform.
+// 1/31/2026 (Activity 1)
+Initial commit.
+
+// 2/20/2026 (Activity 2)
+This project has now been modified to have a dash mechanic and fall damage logic.
