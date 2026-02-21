@@ -1,11 +1,10 @@
-# Activity 2
+# Activity Documentation
 
 // 1/31/2026 (Activity 1) Simple Scene with a moving node
 Initial commit.
 DOCUMENTATION:
 <img width="1634" height="899" alt="Documentation1" src="https://github.com/user-attachments/assets/8f360e78-a4e4-4e2e-95b7-ac49db3bc88c" />
 <img width="1164" height="724" alt="Documentation3" src="https://github.com/user-attachments/assets/1b0039a9-a35c-4a4d-b2e6-8d93b16504ab" />
-
 
 
 // 2/20/2026 Week 2 : Activity 1
