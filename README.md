@@ -38,3 +38,14 @@ This screenshot is a follow up to the previous screenshot as the Player falls to
 **2/21/2026 Week 2 : Activity 2 Level Design**
 <br>
 Activity : Design of 2 levels for an endless runner (2D or 3D); Level 1 should be noticeable easier than level 2. Implement traps. No HP, once caught in trap restart from the beginning of the level. There should be a notification when entering level 2.
+<br>
+**DOCUMENTATION:**
+<img width="915" height="488" alt="Documentation7" src="https://github.com/user-attachments/assets/0faa80db-719c-4ca4-80d1-4b2e4471162e" />
+<br>
+This screenshot shows a snippet of the Endless Runner game demo.
+<br><br>
+
+<img width="875" height="491" alt="Documentation8" src="https://github.com/user-attachments/assets/39e6930e-15f5-4cc3-81bc-51b963dff594" />
+<br>
+This screenshot shows the transition from stage 1 to stage 2.
+<br><br>
