@@ -21,7 +21,7 @@ This screenshot showcases a Dodge/Dash feature in the demo.
 
 
 
-<img width="887" height="545" alt="Documentation5" src="https://github.com/user-attachments/assets/3e1a5898-de19-4716-9de6-bfa690c40740" />  
+<img width="887" height="545" alt="Documentation5" src="https://github.com/user-attachments/assets/3e1a5898-de19-4716-9de6-bfa690c40740" /> 
 This screenshot shows the Player falling mid-air.
 
 
