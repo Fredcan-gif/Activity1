@@ -25,13 +25,12 @@ This screenshot showcases a Dodge/Dash feature in the demo.
 <img width="887" height="545" alt="Documentation5" src="https://github.com/user-attachments/assets/3e1a5898-de19-4716-9de6-bfa690c40740" />
 <br>
 This screenshot shows the Player falling mid-air.
-
-
+<br><br>
 
 <img width="887" height="548" alt="Documentation6" src="https://github.com/user-attachments/assets/c1641cd3-a6f4-43cd-b49c-ceb5e5d8d62d" />
 <br>
 This screenshot is a follow up to the previous screenshot as the Player falls to the ground and dies from fall damage.
-
+<br><br>
 
 
 **2/21/2026 Week 2 : Activity 2 Level Design**
