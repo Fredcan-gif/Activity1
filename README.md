@@ -3,7 +3,7 @@
 **1/31/2026 (Activity 1) Simple Scene with a moving node**
 <br>
 Initial commit.
-
+<br>
 **DOCUMENTATION:**
 <img width="1634" height="899" alt="Documentation1" src="https://github.com/user-attachments/assets/8f360e78-a4e4-4e2e-95b7-ac49db3bc88c" />
 <br>
@@ -16,7 +16,9 @@ This screenshot showcases the game in debug mode where it was tested thoroughly.
 <br><br>
 
 **2/20/2026 Week 2 : Activity 1**
+<br>
 This project has now been modified to have a dash mechanic and fall damage logic.
+<br>
 **DOCUMENTATION:**
 <img width="889" height="528" alt="Documentation4" src="https://github.com/user-attachments/assets/281b35aa-0829-432b-944c-809dac2376cb" />
 <br>
