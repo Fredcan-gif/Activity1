@@ -4,7 +4,10 @@
 Initial commit.
 DOCUMENTATION:
 <img width="1634" height="899" alt="Documentation1" src="https://github.com/user-attachments/assets/8f360e78-a4e4-4e2e-95b7-ac49db3bc88c" />
+This screenshot shows the demo being created for the first activity.
+
 <img width="1164" height="724" alt="Documentation3" src="https://github.com/user-attachments/assets/1b0039a9-a35c-4a4d-b2e6-8d93b16504ab" />
+This screenshot showcases the game in debug mode where it was tested thoroughly.
 
 
 **2/20/2026 Week 2 : Activity 1**
