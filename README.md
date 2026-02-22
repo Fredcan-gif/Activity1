@@ -13,7 +13,7 @@ This screenshot shows the demo being created for the first activity.
 <img width="1164" height="724" alt="Documentation3" src="https://github.com/user-attachments/assets/1b0039a9-a35c-4a4d-b2e6-8d93b16504ab" />
 <br>
 This screenshot showcases the game in debug mode where it was tested thoroughly.
-<br><br>
+<br><br><br>
 
 **2/20/2026 Week 2 : Activity 1**
 <br>
@@ -33,7 +33,7 @@ This screenshot shows the Player falling mid-air.
 <img width="887" height="548" alt="Documentation6" src="https://github.com/user-attachments/assets/c1641cd3-a6f4-43cd-b49c-ceb5e5d8d62d" />
 <br>
 This screenshot is a follow up to the previous screenshot as the Player falls to the ground and dies from fall damage.
-<br><br>
+<br><br><br>
 
 **2/21/2026 Week 2 : Activity 2 Level Design**
 <br>
