@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8ksp5uqhgplb"
+path="res://.godot/imported/nine.mp3-b9e9fcef651f7dd48c74747d1129774b.mp3str"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/MP3/nine.mp3"
+dest_files=["res://.godot/imported/nine.mp3-b9e9fcef651f7dd48c74747d1129774b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

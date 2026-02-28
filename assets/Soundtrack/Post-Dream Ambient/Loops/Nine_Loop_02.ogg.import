@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dprseeshmdacc"
+path="res://.godot/imported/Nine_Loop_02.ogg-e189975a916b0e08091e65133a85cbc7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Nine_Loop_02.ogg"
+dest_files=["res://.godot/imported/Nine_Loop_02.ogg-e189975a916b0e08091e65133a85cbc7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

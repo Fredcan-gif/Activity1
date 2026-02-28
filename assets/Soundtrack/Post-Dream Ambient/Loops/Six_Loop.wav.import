@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cn27nqbb8ypfu"
+path="res://.godot/imported/Six_Loop.wav-f3f9d79f90d7cc28937c4d21b3df3d68.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Six_Loop.wav"
+dest_files=["res://.godot/imported/Six_Loop.wav-f3f9d79f90d7cc28937c4d21b3df3d68.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://drpgbdi7ad5dx"]
+
+[ext_resource type="Script" uid="uid://c4vc80vnm43mk" path="res://bat.gd" id="1_pb2o4"]
+[ext_resource type="Texture2D" uid="uid://bfoii56jdwc7a" path="res://assets/Enemy/Enemies2dPixelAr01/Tileset/03.Spookmoth/FlySpookmoth.png" id="2_tofr1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vobq3"]
+atlas = ExtResource("2_tofr1")
+region = Rect2(0, 0, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tubu"]
+atlas = ExtResource("2_tofr1")
+region = Rect2(25, 0, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tecl"]
+atlas = ExtResource("2_tofr1")
+region = Rect2(50, 0, 25, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp0fn"]
+atlas = ExtResource("2_tofr1")
+region = Rect2(75, 0, 25, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e5j1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vobq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tecl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp0fn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pb2o4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tofr1"]
+radius = 10.559674
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vobq3"]
+
+[node name="Bat" type="CharacterBody2D" unique_id=1215743103]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_pb2o4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=620645310]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_8e5j1")
+autoplay = "default"
+frame_progress = 0.15932046
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1019280757]
+shape = SubResource("CircleShape2D_pb2o4")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=768801086]
+path_postprocessing = 1
+
+[node name="DetectionRange" type="Area2D" parent="." unique_id=1525541823]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionRange" unique_id=689634027]
+scale = Vector2(14.5199995, 14.5199995)
+shape = SubResource("CircleShape2D_tofr1")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=698890704]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=414304443]
+shape = SubResource("CircleShape2D_vobq3")
+
+[connection signal="body_entered" from="DetectionRange" to="." method="_on_detection_range_body_entered"]
+[connection signal="body_exited" from="DetectionRange" to="." method="_on_detection_range_body_exited"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

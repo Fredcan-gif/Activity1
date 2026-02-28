@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2r42srbpos2i"
+path="res://.godot/imported/two.mp3-88b68e5aba8731c9bb7b9ca593241ee5.mp3str"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/MP3/two.mp3"
+dest_files=["res://.godot/imported/two.mp3-88b68e5aba8731c9bb7b9ca593241ee5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

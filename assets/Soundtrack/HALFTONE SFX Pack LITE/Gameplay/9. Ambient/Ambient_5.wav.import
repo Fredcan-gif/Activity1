@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dwn1r0jw6x7vq"
+path="res://.godot/imported/Ambient_5.wav-d29c23775d0d7c7c985bd3f7ecd618ec.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/HALFTONE SFX Pack LITE/Gameplay/9. Ambient/Ambient_5.wav"
+dest_files=["res://.godot/imported/Ambient_5.wav-d29c23775d0d7c7c985bd3f7ecd618ec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

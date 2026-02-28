@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xri60vb8hhel"
+path="res://.godot/imported/Post-Dream_Loop.ogg-c4ce5c0ada82f10ddece0ed6314b9e70.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Post-Dream_Loop.ogg"
+dest_files=["res://.godot/imported/Post-Dream_Loop.ogg-c4ce5c0ada82f10ddece0ed6314b9e70.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

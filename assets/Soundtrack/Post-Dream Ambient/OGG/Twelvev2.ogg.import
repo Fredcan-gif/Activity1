@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b38kxy2qj3g3a"
+path="res://.godot/imported/Twelvev2.ogg-e5a99adbb1e3455f6a4b90931e73c28d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/OGG/Twelvev2.ogg"
+dest_files=["res://.godot/imported/Twelvev2.ogg-e5a99adbb1e3455f6a4b90931e73c28d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

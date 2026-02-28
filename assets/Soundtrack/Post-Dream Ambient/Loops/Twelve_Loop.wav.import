@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ob5xxs0kodes"
+path="res://.godot/imported/Twelve_Loop.wav-6f8e9a5b7a11c6ed6c64eb61ae10cbc4.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Twelve_Loop.wav"
+dest_files=["res://.godot/imported/Twelve_Loop.wav-6f8e9a5b7a11c6ed6c64eb61ae10cbc4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dls7sepax7m2k"
+path="res://.godot/imported/Eight_Loop.wav-18c9a1278bb3fc5025d2389751d230a8.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Eight_Loop.wav"
+dest_files=["res://.godot/imported/Eight_Loop.wav-18c9a1278bb3fc5025d2389751d230a8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

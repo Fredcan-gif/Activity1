@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwinyhxlcmkca"
+path="res://.godot/imported/ten.mp3-f9b6f7e236702764755f7d88bc09b739.mp3str"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/MP3/ten.mp3"
+dest_files=["res://.godot/imported/ten.mp3-f9b6f7e236702764755f7d88bc09b739.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

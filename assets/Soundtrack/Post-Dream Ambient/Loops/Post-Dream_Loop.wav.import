@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://jw4oo872iupu"
+path="res://.godot/imported/Post-Dream_Loop.wav-fdca822b496a718bb3ebe6b40399c70f.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Post-Dream_Loop.wav"
+dest_files=["res://.godot/imported/Post-Dream_Loop.wav-fdca822b496a718bb3ebe6b40399c70f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

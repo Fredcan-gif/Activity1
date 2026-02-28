@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -450.0
+const SPEED = 280.0
+const JUMP_VELOCITY = -370.0
 
 # Dodge settings
 const DODGE_SPEED = 900.0
@@ -29,12 +29,21 @@ var health = 100
 var is_dead = false
 var facing_direction := 1
 
+var footstep_cooldown = 0.3 # Seconds between steps
+var footstep_timer = 0.0
+
 # --- NEW NODE REFERENCES ---
 # These variables ensure we find the nodes in their new locations
 @onready var offset_node: Node2D = $OffsetNode
 @onready var sprite: AnimatedSprite2D = $OffsetNode/AnimatedSprite2D
 @onready var collision_shape: CollisionShape2D = $OffsetNode/CollisionShape2D
 @onready var camera: Camera2D = $Camera2D
+@onready var health_bar = get_tree().root.find_child("TextureProgressBar", true, false)
+@onready var dash_sound = $DashSound
+@onready var death_sound = $DeathSound
+@onready var run_sound = $RunSound
+@onready var jump_sound = $JumpSound
+@onready var hurt_sound = $HurtSound
 
 func _physics_process(delta: float) -> void:
 	update_camera_shake(delta)
@@ -60,7 +69,7 @@ func _physics_process(delta: float) -> void:
 	
 	# If falling (velocity.y is positive), multiply gravity
 		if velocity.y > 0:
-			velocity += gravity * 1.5 * delta  # Change 1.5 to your liking
+			velocity += gravity * 1.0 * delta  # Change 1.5 to your liking
 		else:
 			velocity += gravity * delta
 		
@@ -74,6 +83,8 @@ func _physics_process(delta: float) -> void:
 	# Jump
 	if Input.is_action_just_pressed("go_jump") and currently_on_floor and not is_dodging:
 		velocity.y = JUMP_VELOCITY
+		jump_sound.pitch_scale = randf_range(0.95, 1.05) # Subtle variety
+		jump_sound.play()
 
 	# Start dodge
 	if Input.is_action_just_pressed("go_dodge") and not is_dodging and dodge_cooldown_timer <= 0:
@@ -84,6 +95,7 @@ func _physics_process(delta: float) -> void:
 		dodge_timer = DODGE_TIME
 		dodge_cooldown_timer = DODGE_COOLDOWN
 		dodge_direction = input_dir
+		dash_sound.play() # Trigger the dash sound
 
 	# Movement
 	var direction := Input.get_axis("go_left", "go_right")
@@ -115,12 +127,15 @@ func _physics_process(delta: float) -> void:
 
 func update_animation(currently_on_floor: bool):
 	if is_dead:
+		run_sound.stop()
 		return
 
 	if is_dodging:
+		run_sound.stop() # Don't play footsteps while dashing
 		if sprite.animation != "dash":
 			sprite.play("dash")
 	elif not currently_on_floor:
+		run_sound.stop() # Don't play footsteps in the air
 		if velocity.y < 0:
 			if sprite.animation != "jump":
 				sprite.play("jump")
@@ -130,9 +145,19 @@ func update_animation(currently_on_floor: bool):
 	elif abs(velocity.x) > 10:
 		if sprite.animation != "run":
 			sprite.play("run")
+			
+		# --- FOOTSTEP COOLDOWN LOGIC ---
+		footstep_timer -= get_process_delta_time()
+		if footstep_timer <= 0:
+			run_sound.pitch_scale = randf_range(0.8, 1.2)
+			run_sound.play()
+			footstep_timer = footstep_cooldown 
 	else:
+		run_sound.stop() 
 		if sprite.animation != "idle":
 			sprite.play("idle")
+			
+
 
 
 # =========================
@@ -170,6 +195,18 @@ func check_fall_damage():
 
 		var damage = damage_ratio * MAX_FALL_DAMAGE
 		health -= damage
+		health_bar.value = health
+		
+		# --- PLAY HURT SOUND ---
+		if health > 0: 
+			hurt_sound.pitch_scale = randf_range(0.9, 1.1)
+			hurt_sound.play()
+			shake_camera(6.0, 0.2)
+		
+		print("Fall damage: ", damage, " | Remaining Health: ", health)
+
+		if health <= 0:
+			die()
 		
 		# --- ADD THIS LINE BACK ---
 		print("Fall damage: ", damage, " | Remaining Health: ", health)
@@ -189,15 +226,26 @@ func check_fall_damage():
 func die():
 	if is_dead:
 		return
+		
+	is_dead = true # Move these OUTSIDE the check
+	death_sound.play()
+	
+	# --- NEW: Ensure health and UI are synced on death ---
+	health = 0
+	if health_bar:
+		health_bar.value = 0
+	# ----------------------------------------------------
 
-	is_dead = true
 	shake_camera(15.0, 0.4)
 
 	sprite.visible = false
-	collision_shape.set_deferred("disabled", true) # Use set_deferred for physics safety
+	collision_shape.set_deferred("disabled", true) 
 	velocity = Vector2.ZERO
 
 	spawn_death_particles()
+	
+	await get_tree().create_timer(2.0).timeout
+	get_tree().reload_current_scene()
 
 
 func spawn_death_particles():
@@ -215,7 +263,7 @@ func spawn_death_particles():
 
 func create_particle_material():
 	var mat = ParticleProcessMaterial.new()
-	mat.color = Color.RED
+	mat.color = Color.WHITE
 	mat.direction = Vector3(0, -1, 0)
 	mat.spread = 180
 	mat.initial_velocity_min = 100

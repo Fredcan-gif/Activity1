@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bml62i80x68lu"
+path="res://.godot/imported/Two_Loop.wav-633ad8b1d70915db0651a0d97b1d7997.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Two_Loop.wav"
+dest_files=["res://.godot/imported/Two_Loop.wav-633ad8b1d70915db0651a0d97b1d7997.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d4lh1cay2a5os"
+path="res://.godot/imported/Cancel_11.wav-c07d70d356c9a3da4cb26b5ba5b2f0ce.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/HALFTONE SFX Pack LITE/UI/3. Exit & Cancel/Cancel_11.wav"
+dest_files=["res://.godot/imported/Cancel_11.wav-c07d70d356c9a3da4cb26b5ba5b2f0ce.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

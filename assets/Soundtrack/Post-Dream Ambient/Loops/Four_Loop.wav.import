@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cd5w77wb2s2qp"
+path="res://.godot/imported/Four_Loop.wav-7440e7b334192dc350fe79ac4278e198.sample"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Four_Loop.wav"
+dest_files=["res://.godot/imported/Four_Loop.wav-7440e7b334192dc350fe79ac4278e198.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

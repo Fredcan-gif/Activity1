@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxi03bphio0h7"
+path="res://.godot/imported/Ten_Loop.ogg-9f845703644e7c0e652ec4fc50c9b80e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Ten_Loop.ogg"
+dest_files=["res://.godot/imported/Ten_Loop.ogg-9f845703644e7c0e652ec4fc50c9b80e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

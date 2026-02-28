@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjdrfqocahe2l"
+path="res://.godot/imported/Seven_Loop.ogg-e7e7e067408cec9c3e8831cfefff0237.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Soundtrack/Post-Dream Ambient/Loops/Seven_Loop.ogg"
+dest_files=["res://.godot/imported/Seven_Loop.ogg-e7e7e067408cec9c3e8831cfefff0237.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

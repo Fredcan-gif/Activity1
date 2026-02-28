@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://b1ogi6gw50fnk"]
+
+[ext_resource type="Script" uid="uid://dduho2s2x6xjy" path="res://main_menu.gd" id="1_7vrkn"]
+[ext_resource type="FontFile" uid="uid://crklu7fpoikm5" path="res://assets/PeterFonts.otf" id="2_fu7sn"]
+[ext_resource type="AudioStream" uid="uid://ck5ihcbew61v4" path="res://assets/Soundtrack/Post-Dream Ambient/Loops/Seven_Loop.wav" id="2_jix8l"]
+[ext_resource type="Texture2D" uid="uid://cn7ape4inb1lu" path="res://assets/Environment/NEW/64x64_faces/64x64_faces_005.png" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://b7nxc3n5ydtr6" path="res://assets/Environment/NEW/bg/Dark Mossy Vines.png.png" id="3_qe12f"]
+[ext_resource type="Texture2D" uid="uid://wxoj4upkhpjw" path="res://assets/Environment/NEW/bg/Dark Overgrown Vine.png.png" id="4_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://bqaj2do766o2d" path="res://assets/Environment/NEW/bg/Dark Mossy Vines2.png.png" id="5_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://brg8horu6awl" path="res://assets/Environment/NEW/bg/Dark Box.png.png" id="6_8qtwp"]
+
+[sub_resource type="Gradient" id="Gradient_7vrkn"]
+offsets = PackedFloat32Array(0, 0.8629808, 0.99759614)
+colors = PackedColorArray(1, 1, 1, 1, 0.2760652, 0.27606523, 0.27606523, 1, 0.13464907, 0.1346491, 0.13464904, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fu7sn"]
+gradient = SubResource("Gradient_7vrkn")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.90000004, 0.1)
+metadata/_snap_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_jix8l"]
+font = ExtResource("2_fu7sn")
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.4627451)
+
+[node name="Main Menu" type="Node2D" unique_id=1483382934]
+script = ExtResource("1_7vrkn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=413488731]
+stream = ExtResource("2_jix8l")
+autoplay = true
+bus = &"BGM"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1071314777]
+position = Vector2(576.6737, 331.99997)
+scale = Vector2(18.228947, 13.875)
+texture = SubResource("GradientTexture2D_fu7sn")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1514195590]
+
+[node name="DarkMossyVines_png" type="Sprite2D" parent="Node2D" unique_id=342299052]
+position = Vector2(600, 320)
+rotation = 0.48792663
+scale = Vector2(2.5526538, 2.5526538)
+texture = ExtResource("3_qe12f")
+
+[node name="DarkMossyVines_png2" type="Sprite2D" parent="Node2D" unique_id=1595382575]
+modulate = Color(1, 1, 1, 0.37254903)
+position = Vector2(712.0001, 343.99997)
+rotation = 2.146675
+scale = Vector2(1.908022, 1.908022)
+texture = ExtResource("3_qe12f")
+
+[node name="DarkOvergrownVine_png" type="Sprite2D" parent="Node2D" unique_id=480972181]
+position = Vector2(607.99994, 311.99997)
+rotation = 0.20922337
+scale = Vector2(1.3354461, 1.3354461)
+texture = ExtResource("4_8qtwp")
+
+[node name="DarkOvergrownVine_png2" type="Sprite2D" parent="Node2D" unique_id=8143793]
+modulate = Color(1, 1, 1, 0.40392157)
+position = Vector2(7.6293945e-06, -64)
+rotation = -0.4276281
+scale = Vector2(1.3354461, 1.3354461)
+texture = ExtResource("4_8qtwp")
+
+[node name="DarkMossyVines2_png" type="Sprite2D" parent="Node2D" unique_id=1487662861]
+modulate = Color(1, 1, 1, 0.13725491)
+position = Vector2(600, 664)
+scale = Vector2(2.731724, 2.731724)
+texture = ExtResource("5_dy7ct")
+
+[node name="DarkBox_png" type="Sprite2D" parent="Node2D" unique_id=364373200]
+position = Vector2(904, 40.000023)
+rotation = -1.5707964
+scale = Vector2(1.3005252, 1.3005252)
+texture = ExtResource("6_8qtwp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1531582558]
+texture_filter = 1
+position = Vector2(256, 392)
+scale = Vector2(8, 8)
+texture = ExtResource("3_jix8l")
+
+[node name="Label" type="Label" parent="." unique_id=746616950]
+texture_filter = 1
+offset_left = 560.0
+offset_top = 104.0
+offset_right = 648.0
+offset_bottom = 136.0
+scale = Vector2(4.56, 4.56)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+text = "Void Demo"
+label_settings = SubResource("LabelSettings_jix8l")
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Button_manager" type="Control" parent="." unique_id=29064852]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Button_manager" unique_id=1881931307]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 628.0
+offset_top = 236.0
+offset_right = 836.0
+offset_bottom = 327.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 43
+text = "Start"
+flat = true
+
+[node name="Options" type="Button" parent="Button_manager" unique_id=1608867498]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 628.0
+offset_top = 340.0
+offset_right = 836.0
+offset_bottom = 404.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 43
+text = "Options"
+flat = true
+
+[node name="Quit" type="Button" parent="Button_manager" unique_id=1142000679]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 628.0
+offset_top = 420.0
+offset_right = 836.0
+offset_bottom = 511.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 43
+text = "Exit"
+flat = true
+
+[connection signal="pressed" from="Button_manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_manager/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]

@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Activity"
-run/main_scene="uid://dv3wbe1hyrykd"
+run/main_scene="uid://b1ogi6gw50fnk"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://b3c017gi080ak"
 
 [input]
 
