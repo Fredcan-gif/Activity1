@@ -48,4 +48,43 @@ This screenshot shows a snippet of the Endless Runner game demo.
 <img width="875" height="491" alt="Documentation8" src="https://github.com/user-attachments/assets/39e6930e-15f5-4cc3-81bc-51b963dff594" />
 <br>
 This screenshot shows the transition from stage 1 to stage 2.
+<br><br><br>
+
+**2/27/2026 Week 3: Activity 1 UI/UX & Audio**
+<br>
+Activity : Integrate UI into your game proto; add sound effects, walk, run, slash, etc. You may also add game music, introduction, and so on.
+<br>
+**DOCUMENTATION:**
+<img width="922" height="514" alt="Documentation7" src="https://github.com/user-attachments/assets/5aed61a6-0607-48f3-b9e6-b98ff1c29aa2" />
+<br>
+This screenshot shows the game's main menu screen.
 <br><br>
+
+<img width="921" height="515" alt="Documentation8" src="https://github.com/user-attachments/assets/7ed2fc1b-b4ee-48dd-aef3-4a875769ffff" />
+<br>
+This screenshot shows a snippet of the game with a Health HUD.
+<br><br>
+
+<img width="616" height="311" alt="Documentation9" src="https://github.com/user-attachments/assets/1f16100b-62f9-4bff-a2bb-139cc5124824" />
+<br>
+This screenshot shows the game's audio buses.
+<br><br><br>
+
+**2/28/2026 Week 3: Activity 2 AI & Enemies**
+<br>
+Activity : Add enemies to your game (note enemies, not obstacles)
+<br>
+**DOCUMENTATION**
+<img width="919" height="516" alt="Documentation10" src="https://github.com/user-attachments/assets/f0dabdeb-ddc0-4f0a-8ebc-581e954f6c52" />
+<br>
+This screenshot shows the enemy AI's pathfinding in action.
+<br><br>
+
+<img width="885" height="573" alt="Documentation11" src="https://github.com/user-attachments/assets/ccb7d95e-dcae-4eac-baff-4670188cb9ca" />
+<br>
+This screenshot shows how the enemy AI's pathfinding node is done using NavigationRegion2D and NavigationAgent2D.
+<br><br><br>
+
+
+
+
