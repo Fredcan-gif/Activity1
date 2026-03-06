@@ -85,7 +85,7 @@ This screenshot shows the enemy AI's pathfinding in action.
 This screenshot shows how the enemy AI's pathfinding node is done using NavigationRegion2D and NavigationAgent2D.
 <br><br><br>
 
-**3/6/2026 Week 4 Activity 1 :3D Basics & Optimization**
+**3/6/2026 Week 4 Activity 1 : 3D Basics & Optimization**
 <br>
 Activity : 3D nodes (meshes, cameras), lighting (DirectionalLight), profiling tools for FPS optimization.
 <br>
