@@ -85,6 +85,22 @@ This screenshot shows the enemy AI's pathfinding in action.
 This screenshot shows how the enemy AI's pathfinding node is done using NavigationRegion2D and NavigationAgent2D.
 <br><br><br>
 
+**3/6/2026 Week 4 Activity 1 :3D Basics & Optimization**
+<br>
+Activity : 3D nodes (meshes, cameras), lighting (DirectionalLight), profiling tools for FPS optimization.
+<br>
+**DOCUMENTATION**
+<img width="1145" height="648" alt="Doc9" src="https://github.com/user-attachments/assets/ee334c18-fc74-48f2-86ce-b7e2d051a680" />
+<br>
+This screenshot shows a 3D demo with lighting and volumetric fog, a Spotlight3D is attached to the player as a flashlight and reflects shadow rays over objects if pointed at.
+<br><br>
+
+<img width="1145" height="650" alt="Doc10" src="https://github.com/user-attachments/assets/77426493-b237-449e-8862-b7e67aa32108" />
+<br>
+This screenshot shows the Spotlight3D flashlight pointed at a stop sign mesh, casting shadows behind it.
+<br><br><br>
+
+
 
 
 
