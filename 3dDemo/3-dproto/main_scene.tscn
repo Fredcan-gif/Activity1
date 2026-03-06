@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://dievw6i1ndo0d"]
+
+[ext_resource type="PackedScene" uid="uid://dxq4o0fj0ns78" path="res://character_body_3d.tscn" id="1_0f027"]
+[ext_resource type="ArrayMesh" uid="uid://cyb8sasy1uwj5" path="res://35-mph-speed-limit-sign-unwrap/35 mph speed limit sign final.obj" id="2_gyfs4"]
+[ext_resource type="Texture2D" uid="uid://dne5cexlad5pi" path="res://35-mph-speed-limit-sign-unwrap/35 mph speed limit sign unwrap 4888.png" id="3_d5x1h"]
+[ext_resource type="AudioStream" uid="uid://deyud1wc1vim8" path="res://35-mph-speed-limit-sign-unwrap/Ten_Loop.wav" id="4_d5x1h"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0f027"]
+
+[sub_resource type="Sky" id="Sky_2c62f"]
+sky_material = SubResource("ProceduralSkyMaterial_0f027")
+
+[sub_resource type="Environment" id="Environment_gyfs4"]
+background_mode = 2
+background_energy_multiplier = 0.1
+sky = SubResource("Sky_2c62f")
+fog_enabled = true
+fog_density = 0.02
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0f027"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_o3jxj"]
+material = SubResource("StandardMaterial3D_0f027")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0f027"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2c62f"]
+albedo_color = Color(0.37111905, 0.37111905, 0.37111905, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gyfs4"]
+material = SubResource("StandardMaterial3D_2c62f")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2c62f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5x1h"]
+albedo_color = Color(0.45263505, 0.21426252, 0.08185125, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8mm7a"]
+material = SubResource("StandardMaterial3D_d5x1h")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hq1ik"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mm7a"]
+albedo_texture = ExtResource("3_d5x1h")
+
+[node name="Node3D" type="Node3D" unique_id=564346589]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1430638724]
+environment = SubResource("Environment_gyfs4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=689971077]
+transform = Transform3D(1, 0, 0, 0, 0.026107222, 0.99965924, 0, -0.99965924, 0.026107222, -0.86958873, 1.0350001, 0.0766623)
+light_energy = 0.1
+shadow_enabled = true
+sky_mode = 1
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1337752933]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=714430000]
+transform = Transform3D(16.071375, 0, 0, 0, 0.07136577, 0, 0, 0, 20.857944, 0, 0, 0)
+mesh = SubResource("BoxMesh_o3jxj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2038089535]
+transform = Transform3D(16.0555, 0, 0, 0, 0.07, 0, 0, 0, 20.831755, 0, 0, 0)
+shape = SubResource("BoxShape3D_0f027")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=329239024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7573447, 1.0486221, 2.9589195)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2" unique_id=1740566428]
+transform = Transform3D(0.96290505, 0, 0, 0, 2.0540586, 0, 0, 0, 0.8782925, 0, 0, 0)
+mesh = SubResource("BoxMesh_gyfs4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=2042504141]
+transform = Transform3D(0.962, 0, 0, 0, 2.05, 0, 0, 0, 0.877, 0, 0, 0)
+shape = SubResource("BoxShape3D_2c62f")
+
+[node name="Sidewalk" type="StaticBody3D" parent="." unique_id=920665191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.377766, -0.008247137, 0.0015212297)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sidewalk" unique_id=730777416]
+transform = Transform3D(3.4375708, 0, 0, 0, 0.30416608, 0, 0, 0, 21.080704, 0, 0, 0)
+mesh = SubResource("BoxMesh_gyfs4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sidewalk" unique_id=102505832]
+transform = Transform3D(3.4343402, 0, 0, 0, 0.30356508, 0, 0, 0, 21.049686, 0, 0, 0)
+shape = SubResource("BoxShape3D_2c62f")
+
+[node name="Sidewalk2" type="StaticBody3D" parent="." unique_id=1053578491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3944693, -0.008247137, 0.0015212297)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sidewalk2" unique_id=1583960748]
+transform = Transform3D(7.2188983, 0, 0, 0, 0.30416608, 0, 0, 0, 21.080704, 0, 0, 0)
+mesh = SubResource("BoxMesh_gyfs4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sidewalk2" unique_id=51147951]
+transform = Transform3D(7.2121143, 0, 0, 0, 0.30356508, 0, 0, 0, 21.049686, 0, 0, 0)
+shape = SubResource("BoxShape3D_2c62f")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=832298428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6036744, 1.0486221, 5.55568)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D3" unique_id=1985070043]
+transform = Transform3D(0.96290505, 0, 0, 0, 2.0540586, 0, 0, 0, 0.8782925, 0, 0, 0)
+mesh = SubResource("BoxMesh_8mm7a")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=235136163]
+transform = Transform3D(0.962, 0, 0, 0, 2.05, 0, 0, 0, 0.877, 0, 0, 0)
+shape = SubResource("BoxShape3D_hq1ik")
+
+[node name="CharacterBody3D" parent="." unique_id=821957665 instance=ExtResource("1_0f027")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0970306, 1.3281658, 0.0766623)
+
+[node name="35MphSpeedLimitSignFinal" type="MeshInstance3D" parent="." unique_id=1883336245]
+transform = Transform3D(0.27337438, 0, 0, 0, 0.3187382, 0, 0, 0, 0.6063658, -4.8339057, 2.0480843, -6.8005056)
+mesh = ExtResource("2_gyfs4")
+surface_material_override/0 = SubResource("StandardMaterial3D_8mm7a")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=826866001]
+stream = ExtResource("4_d5x1h")
+autoplay = true
