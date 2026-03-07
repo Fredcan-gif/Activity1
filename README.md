@@ -110,7 +110,7 @@ Activity : Export the game as a playable EXE and APK file
 This screenshot shows the game running natively as an EXE file.
 <br><br>
 
-image here
+<img width="1173" height="584" alt="phon" src="https://github.com/user-attachments/assets/960e6c27-0949-4583-9f17-7db6a4631a65" />
 <br>
 This screenshot shows the game natively in a phone as an APK file.
 <br><br><br>
