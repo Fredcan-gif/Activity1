@@ -100,6 +100,20 @@ This screenshot shows a 3D demo with lighting and volumetric fog, a Spotlight3D 
 This screenshot shows the Spotlight3D flashlight pointed at a stop sign mesh, casting shadows behind it.
 <br><br><br>
 
+**3/7/2026 Week 4 Activity 2 : Exporting as APK and EXE**
+<br>
+Activity : Export the game as a playable EXE and APK file
+<br>
+**DOCUMENTATION**
+<img width="1164" height="697" alt="image" src="https://github.com/user-attachments/assets/b12ebafe-ca27-473a-a7e9-b65f156968c2" />
+<br>
+This screenshot shows the game running natively as an EXE file.
+<br><br>
+
+<img width="1173" height="584" alt="phon" src="https://github.com/user-attachments/assets/960e6c27-0949-4583-9f17-7db6a4631a65" />
+<br>
+This screenshot shows the game natively in a phone as an APK file.
+<br><br><br>
 
 
 
