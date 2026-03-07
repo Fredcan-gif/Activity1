@@ -14,6 +14,14 @@
 [ext_resource type="Texture2D" uid="uid://bs0xafylov3mp" path="res://assets/Environment/NEW/64x64_faces/64x64_faces_008.png" id="12_unwg1"]
 [ext_resource type="PackedScene" uid="uid://bc8gscpnx8s1m" path="res://kill_block.tscn" id="13_8s5tm"]
 [ext_resource type="PackedScene" uid="uid://drpgbdi7ad5dx" path="res://bat.tscn" id="14_npwo4"]
+[ext_resource type="Texture2D" uid="uid://uxi4cts6bsxu" path="res://assets/Player/Controls/dpad/dpad_ps_light_right.png" id="15_nq1yn"]
+[ext_resource type="Texture2D" uid="uid://ca8jatu5lqqt3" path="res://assets/Player/Controls/dpad/dpad_ps_dark_right.png" id="16_nq1yn"]
+[ext_resource type="Texture2D" uid="uid://dv1gugad7p5rw" path="res://assets/Player/Controls/dpad/dpad_ps_light_left.png" id="17_kw6bj"]
+[ext_resource type="Texture2D" uid="uid://cmqt7dyiea1q2" path="res://assets/Player/Controls/dpad/dpad_ps_dark_left.png" id="18_vrowg"]
+[ext_resource type="Texture2D" uid="uid://c66lvjof0k8ye" path="res://assets/Player/Controls/button/buttonBG_A_light.png" id="19_83ttr"]
+[ext_resource type="Texture2D" uid="uid://bhjfgbhypp3dx" path="res://assets/Player/Controls/button/buttonBG_B_light.png" id="20_y4x1e"]
+[ext_resource type="Texture2D" uid="uid://dwvlj42k6lfkm" path="res://assets/Player/Controls/button/buttonBG_A_dark.png" id="21_ekgh5"]
+[ext_resource type="Texture2D" uid="uid://bwmjiw3yc7jrx" path="res://assets/Player/Controls/button/buttonBG_B_dark.png" id="22_mxi8p"]
 
 [sub_resource type="Gradient" id="Gradient_bu2ti"]
 offsets = PackedFloat32Array(0, 0.9735577, 1)
@@ -879,3 +887,37 @@ scale = Vector2(2.04, 2.04)
 [node name="Bat4" parent="." unique_id=1327355505 instance=ExtResource("14_npwo4")]
 position = Vector2(1544, 104.00001)
 scale = Vector2(2.04, 2.04)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1038494908]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1809374844]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer/Control" unique_id=1536122489]
+position = Vector2(80, 472)
+texture_normal = ExtResource("15_nq1yn")
+texture_pressed = ExtResource("16_nq1yn")
+action = "go_left"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="CanvasLayer/Control" unique_id=1804749563]
+position = Vector2(248, 472)
+texture_normal = ExtResource("17_kw6bj")
+texture_pressed = ExtResource("18_vrowg")
+action = "go_right"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="CanvasLayer/Control" unique_id=1658366249]
+position = Vector2(864, 496)
+texture_normal = ExtResource("19_83ttr")
+texture_pressed = ExtResource("20_y4x1e")
+action = "go_jump"
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="CanvasLayer/Control" unique_id=161585958]
+position = Vector2(984, 408)
+texture_normal = ExtResource("21_ekgh5")
+texture_pressed = ExtResource("22_mxi8p")
+action = "go_dodge"
