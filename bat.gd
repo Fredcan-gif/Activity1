@@ -43,26 +43,12 @@ func _on_detection_range_body_exited(body):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
+	# Only proceed if it's the player, they are alive, AND not currently immune
 	if body.is_in_group("Player") and not body.is_dead:
-		# 1. Deal Damage
-		body.health -= 20
+		if not body.is_invincible: # This stops the shake/re-hit during blink
+			body.receive_hit(20)
+			
+			if body.has_method("shake_camera"):
+				body.shake_camera(5.0, 0.2)
 		
-		# 2. Update the HUD (Synchronize the health bar)
-		if body.health_bar:
-			body.health_bar.value = body.health
-		
-		# 3. Play Player's Hurt Sound/Effects
-		if body.has_method("shake_camera"):
-			body.shake_camera(4.0, 0.2)
-		if body.hurt_sound:
-			body.hurt_sound.play()
-
-		# 4. Small Knockback
-		# We calculate the direction from the Bat to the Player
-		var knockback_direction = global_position.direction_to(body.global_position)
-		var knockback_strength = 500.0
-		body.velocity = knockback_direction * knockback_strength
-		
-		# 5. Check for Death
-		if body.health <= 0:
-			body.die()
+	

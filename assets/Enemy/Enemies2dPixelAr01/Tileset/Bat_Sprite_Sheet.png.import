@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxmj8ejgfpajv"
-path="res://.godot/imported/IdleSpora.png-04a7e610acaef03ef264be110176a786.ctex"
+uid="uid://dx6rre3w2rgjd"
+path="res://.godot/imported/Bat_Sprite_Sheet.png-0a883899b2d2dd09f4adfa5a2966bcf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Enemy/Enemies2dPixelAr01/Tileset/04.Spora/IdleSpora.png"
-dest_files=["res://.godot/imported/IdleSpora.png-04a7e610acaef03ef264be110176a786.ctex"]
+source_file="res://assets/Enemy/Enemies2dPixelAr01/Tileset/Bat_Sprite_Sheet.png"
+dest_files=["res://.godot/imported/Bat_Sprite_Sheet.png-0a883899b2d2dd09f4adfa5a2966bcf4.ctex"]
 
 [params]
 

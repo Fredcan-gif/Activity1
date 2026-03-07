@@ -44,6 +44,33 @@ var footstep_timer = 0.0
 @onready var run_sound = $RunSound
 @onready var jump_sound = $JumpSound
 @onready var hurt_sound = $HurtSound
+var is_invincible: bool = false
+
+func receive_hit(damage: int):
+	# If already immune or dead, ignore the hit
+	if is_invincible or is_dead:
+		return
+		
+	health -= damage
+	if health_bar:
+		health_bar.value = health
+	
+	if health <= 0:
+		die()
+	else:
+		if hurt_sound:
+			hurt_sound.play()
+		
+		# Start the immunity period
+		start_immunity(1.5) # Player is safe for 1.5 seconds
+
+func start_immunity(duration: float):
+	is_invincible = true
+	
+	# Wait for the specified time
+	await get_tree().create_timer(duration).timeout
+	
+	is_invincible = false
 
 func _physics_process(delta: float) -> void:
 	update_camera_shake(delta)

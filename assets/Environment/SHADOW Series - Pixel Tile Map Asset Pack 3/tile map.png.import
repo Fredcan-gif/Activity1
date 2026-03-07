@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://odpm6r5bqhve"
-path="res://.godot/imported/Assets.png-5b3b409dacec4336f4bcbd02ec858fc2.ctex"
+uid="uid://buk3em6a1lcvw"
+path="res://.godot/imported/tile map.png-564096e651f0fc6410d32acebfec6c64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/NEW/Assets.png"
-dest_files=["res://.godot/imported/Assets.png-5b3b409dacec4336f4bcbd02ec858fc2.ctex"]
+source_file="res://assets/Environment/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png"
+dest_files=["res://.godot/imported/tile map.png-564096e651f0fc6410d32acebfec6c64.ctex"]
 
 [params]
 

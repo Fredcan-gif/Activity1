@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o44tpje7bs2c"
-path="res://.godot/imported/MoveSpora.png-811635f129625f3d5459fa18bbf0d49a.ctex"
+uid="uid://d4f5sruwgxrsi"
+path="res://.godot/imported/Jump Animation 48x48.png-ef07d4ef819b40bd7192ab03f0dbabb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Enemy/Enemies2dPixelAr01/Tileset/04.Spora/MoveSpora.png"
-dest_files=["res://.godot/imported/MoveSpora.png-811635f129625f3d5459fa18bbf0d49a.ctex"]
+source_file="res://assets/Player/Shadow character animation package/Jump Animation 48x48/Jump Animation 48x48.png"
+dest_files=["res://.godot/imported/Jump Animation 48x48.png-ef07d4ef819b40bd7192ab03f0dbabb7.ctex"]
 
 [params]
 

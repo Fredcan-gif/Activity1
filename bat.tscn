@@ -1,23 +1,33 @@
 [gd_scene format=3 uid="uid://drpgbdi7ad5dx"]
 
 [ext_resource type="Script" uid="uid://c4vc80vnm43mk" path="res://bat.gd" id="1_pb2o4"]
-[ext_resource type="Texture2D" uid="uid://bfoii56jdwc7a" path="res://assets/Enemy/Enemies2dPixelAr01/Tileset/03.Spookmoth/FlySpookmoth.png" id="2_tofr1"]
+[ext_resource type="Texture2D" uid="uid://dx6rre3w2rgjd" path="res://assets/Enemy/Enemies2dPixelAr01/Tileset/Bat_Sprite_Sheet.png" id="2_tofr1"]
+[ext_resource type="Shader" uid="uid://bnusam8ckjy8a" path="res://bat.gdshader" id="2_vobq3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1tubu"]
+shader = ExtResource("2_vobq3")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/width = 1.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vobq3"]
 atlas = ExtResource("2_tofr1")
-region = Rect2(0, 0, 25, 25)
+region = Rect2(0, 24, 16, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1tubu"]
 atlas = ExtResource("2_tofr1")
-region = Rect2(25, 0, 25, 25)
+region = Rect2(16, 24, 16, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3tecl"]
 atlas = ExtResource("2_tofr1")
-region = Rect2(50, 0, 25, 25)
+region = Rect2(32, 24, 16, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jp0fn"]
 atlas = ExtResource("2_tofr1")
-region = Rect2(75, 0, 25, 25)
+region = Rect2(48, 24, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulak1"]
+atlas = ExtResource("2_tofr1")
+region = Rect2(64, 24, 16, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8e5j1"]
 animations = [{
@@ -33,6 +43,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jp0fn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulak1")
 }],
 "loop": true,
 "name": &"default",
@@ -40,6 +53,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pb2o4"]
+radius = 8.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tofr1"]
 radius = 10.559674
@@ -53,9 +67,12 @@ script = ExtResource("1_pb2o4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=620645310]
 texture_filter = 1
+material = SubResource("ShaderMaterial_1tubu")
+position = Vector2(0, 5)
+scale = Vector2(1.1199968, 1.1199968)
 sprite_frames = SubResource("SpriteFrames_8e5j1")
 autoplay = "default"
-frame_progress = 0.15932046
+frame_progress = 0.9016333
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1019280757]
 shape = SubResource("CircleShape2D_pb2o4")
@@ -72,6 +89,7 @@ shape = SubResource("CircleShape2D_tofr1")
 [node name="Hitbox" type="Area2D" parent="." unique_id=698890704]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=414304443]
+scale = Vector2(0.79999864, 0.79999864)
 shape = SubResource("CircleShape2D_vobq3")
 
 [connection signal="body_entered" from="DetectionRange" to="." method="_on_detection_range_body_entered"]

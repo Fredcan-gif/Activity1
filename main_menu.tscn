@@ -86,13 +86,13 @@ texture = ExtResource("3_jix8l")
 
 [node name="Label" type="Label" parent="." unique_id=746616950]
 texture_filter = 1
-offset_left = 560.0
+offset_left = 528.0
 offset_top = 104.0
-offset_right = 648.0
+offset_right = 624.0
 offset_bottom = 136.0
 scale = Vector2(4.56, 4.56)
 theme_override_fonts/font = ExtResource("2_fu7sn")
-text = "Void Demo"
+text = "Caved Demo"
 label_settings = SubResource("LabelSettings_jix8l")
 horizontal_alignment = 1
 uppercase = true
