@@ -120,8 +120,6 @@ This screenshot shows the game natively in a phone as an APK file.
 Activity : Implement either Local or Cloud based Multiplayer
 <br>
 **DOCUMENTATION**
-<img width="1173" height="584" alt="phon" src="docs/Documentation9.png" />
-![Login Page](docs/doc111.png)
-
+![image alt](https://github.com/Fredcan-gif/Activity1/blob/b184149daf96ecc13c7fef24f2d45638d4eb2afe/docs/doc111.PNG)
 
 
