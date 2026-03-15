@@ -121,5 +121,13 @@ Activity : Implement either Local or Cloud based Multiplayer
 <br>
 **DOCUMENTATION**
 ![image alt](https://github.com/Fredcan-gif/Activity1/blob/b184149daf96ecc13c7fef24f2d45638d4eb2afe/docs/doc111.PNG)
+<br>
+This screenshot shows the main menu with a button for Singleplayer and Two Players.
+<br><br>
+
+![image](https://github.com/Fredcan-gif/Activity1/blob/907fa2bf29541eef6732df739296557a6a7c38f9/docs/doc112.PNG)
+<br>
+This screenshot shows a snippet of the Two Player mode where each ball is controlled by a player and they take turns swinging it towards the hole.
+<br><br><br>
 
 
